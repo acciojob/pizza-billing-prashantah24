@@ -23,6 +23,8 @@ public class Pizza {
             this.price=400;
         }
         this.baseprice = price;
+
+        this.bill += "Base Price Of The Pizza: " + this.baseprice + "\n";
     }
 
     public int getPrice(){
@@ -61,26 +63,24 @@ public class Pizza {
         if(!billCreated) {
 
 
-            if (this.price > 0) {
-                this.bill += "Base Price Of The Pizza: " + this.baseprice + "/n";
-            }
+
 
             if (cheese) {
-                this.bill += "Extra Cheese Added: 80" + "/n";
+                this.bill += "Extra Cheese Added: 80" + "\n";
             }
 
             if (toppings) {
                 if (isVeg) {
-                    this.bill += "Extra Toppings Added: 70" + "/n";
+                    this.bill += "Extra Toppings Added: 70" + "\n";
                 } else {
-                    this.bill += "Extra Toppings Added: 70" + "/n";
+                    this.bill += "Extra Toppings Added: 70" + "\n";
                 }
             }
 
             if (paperBag) {
-                this.bill += "Paperbag Added: 20" + "/n";
+                this.bill += "Paperbag Added: 20" + "\n";
             }
-            this.bill += "Total Price: " + this.price + "/n";
+            this.bill += "Total Price: " + this.price + "\n";
             billCreated = true;
 
 
