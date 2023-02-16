@@ -22,6 +22,7 @@ public class Pizza {
         else{
             this.price=400;
         }
+        this.baseprice = price;
     }
 
     public int getPrice(){
@@ -44,7 +45,7 @@ public class Pizza {
             } else {
                 price += 120;
             }
-            this.baseprice = price;
+
             this.toppings = true;
         }
     }
