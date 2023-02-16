@@ -3,6 +3,7 @@ package com.driver;
 public class Pizza {
 
     private int price;
+    private int baseprice;
     private Boolean isVeg;
     private String bill;
 
@@ -43,6 +44,7 @@ public class Pizza {
             } else {
                 price += 120;
             }
+            this.baseprice = price;
             this.toppings = true;
         }
     }
@@ -59,7 +61,7 @@ public class Pizza {
 
 
             if (this.price > 0) {
-                this.bill += "Base Price Of The Pizza: " + this.price + "/n";
+                this.bill += "Base Price Of The Pizza: " + this.baseprice + "/n";
             }
 
             if (cheese) {
